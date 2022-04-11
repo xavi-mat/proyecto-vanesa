@@ -1,0 +1,355 @@
+    /* fonts */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+    /* -------------------------- */
+    /* body */
+    
+    body {
+        background-image: url("/assets/backgroung.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+        height: auto;
+        cursor: url("/assets/cursormarvel.png"), pointer;
+    }
+    /* -------------------------------- */
+    /* modelos flexbox */
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    /* contiene 4 div, encabezado principal, titulo 1 biografia, otro para los otros 2 y el container de la foto y los bocadillos */
+    
+    .title-main {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* contiene h1 y h2 */
+    
+    .title-bio {
+        display: flex;
+        justify-content: center;
+        visibility: hidden;
+    }
+    /* el boton que engloba en enlace con la imagen y el texto */
+    
+    .titles-2-3 {
+        display: flex;
+        justify-content: space-evenly;
+        visibility: hidden;
+    }
+    /* dos div el de portafolio y el de contact */
+    
+    .imageGroot {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /* 3 container,  2 bocadillos e imagen groot */
+    
+    .hello,
+    .whereYouGo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* alinear el contenido de texto dentro de los bocadillos */
+    
+    .insidebut {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* dentro de los botones una imagen link a ambos lados con un texto  */
+    /* -------------------------------- */
+    /* imagen de groot */
+    
+    .imageGroot img {
+        height: 16em;
+        width: 12em;
+        border-radius: 4em;
+    }
+    /* ------------------------------------ */
+    /* Estilos para los encabezados */
+    
+    h1 {
+        font-family: 'Hanalei Fill', cursive;
+        letter-spacing: 3px;
+        font-size: 4em;
+        font-weight: 900;
+        letter-spacing: 0.2em;
+        word-spacing: 0.2em;
+        -webkit-text-stroke: 2px brown;
+        -moz-text-stroke: 2px brown;
+        background: linear-gradient(rgb(255, 136, 0), rgb(236, 200, 165));
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-linear-gradient: (rgb(255, 136, 0), rgb(236, 200, 165));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: brown;
+        margin: 2px;
+    }
+    
+    h2 {
+        font-family: 'Hanalei Fill', cursive;
+        font-size: 2em;
+        letter-spacing: 1.4em;
+        font-weight: 100;
+        color: brown;
+        text-shadow: 4px -4px black;
+        -webkit-text-stroke: 2px rgb(230, 171, 117);
+        -moz-text-stroke: 2px rgb(230, 171, 117);
+        margin: 0;
+        margin-top: 1em;
+        margin-bottom: 1.2em;
+    }
+    /* modifico margin para que ocupe solo lo de la letra, pero con algo de espaciado con el h1 por arriba y con los otros contenidos por abajo */
+    /* -------------------------------------- */
+    /* estilo a la zona del botón */
+    
+    button p {
+        margin: auto;
+        padding: 6px;
+    }
+    /* el texto dentro de los botones con margin auto para que simplemente ocupe el espacio de la letra */
+    
+    button {
+        all: unset;
+        border: 2px dashed white;
+        border-radius: 30px;
+    }
+    
+    a {
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Piedra', cursive;
+        font-size: 2em;
+        font-weight: 900;
+        letter-spacing: 3px;
+        -webkit-text-stroke: 1.3px brown;
+        -moz-text-stroke: 1.3px brown;
+        cursor: url("/assets/guantelete.png"), pointer;
+    }
+    /* estilo del enlace en sí */
+    /* ------------------------------- */
+    /* Dimensionar las imágenes para iconos */
+    
+    .title-bio img,
+    .titles-2-3 img {
+        width: 1.2em;
+        padding: 4px 13px;
+    }
+    /* bocadillos*/
+    
+    .whereYouGo {
+        height: 2em;
+        width: 2.3em;
+    }
+    
+    .hello {
+        height: 1.1em;
+        width: 5.2em;
+    }
+    
+    .margin {
+        margin-top: 1em;
+        padding: 5px;
+    }
+    /* como tienen un flex direction row y además están rotados, pero no los quiero con align items center, para darles un poco más de espacio con el tope del container modifico margin-top */
+    
+    .hello {
+        font-family: 'Ceviche One', cursive;
+        font-size: 2.5em;
+        color: brown;
+        -webkit-text-stroke: 1px black;
+        -moz-text-stroke: 1px black;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.616);
+        border: 3px solid brown;
+    }
+    
+    .whereYouGo {
+        font-family: 'Ceviche One', cursive;
+        font-size: 2em;
+        width: auto;
+        text-align: center;
+        color: brown;
+        -webkit-text-stroke: 1px black;
+        -moz-text-stroke: 1px black;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.616);
+        border: 3px solid brown;
+    }
+    /* ------------------------------- */
+    /* estilos al darle al boton */
+    
+    .insidebut a:hover {
+        background-color: brown;
+        border-radius: 30px;
+        -webkit-text-stroke: 1px white;
+        -moz-text-stroke: 1px white;
+    }
+    /* --------------------------- */
+    /* animaciones */
+    
+    .hello {
+        filter: opacity(0);
+        animation-name: saludo;
+        transform: rotate(20deg);
+        animation-duration: 5s;
+        width: auto;
+        animation-delay: 3s;
+        animation-fill-mode: backwards;
+    }
+    /* backwards porque quiero que vuelva a su valor inicial que es opacidad 0 */
+    /* forwards: el objeto sobre el que se aplica la animación quedará con los valores y estilos que le aplique el último keyframe de la ejecución de la animación. */
+    
+    .whereYouGo {
+        filter: opacity(0);
+        animation-name: direction;
+        transform: rotate(-20deg);
+        animation-fill-mode: backwards;
+        animation-duration: 6s;
+        animation-delay: 9s;
+    }
+    
+    .imageGroot {
+        animation-name: saludo;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+        /* como este quiero que esté fijo y no se vaya luego, no le pongo el filter, pero aquí pongo both para que empiece con opacidad 0, sino se ve y a los 2 segundos se quita para iniciar la animación*/
+    }
+    
+    @keyframes saludo {
+        0% {
+            filter: opacity(0);
+        }
+        10% {
+            filter: opacity(0.1);
+        }
+        15% {
+            filter: opacity(0.2);
+        }
+        20% {
+            filter: opacity(0.3);
+        }
+        25% {
+            filter: opacity(0.4);
+        }
+        50% {
+            filter: opacity(0.6);
+        }
+        75% {
+            filter: opacity(0.8);
+        }
+        100% {
+            filter: opacity(1);
+        }
+    }
+    
+    @keyframes direction {
+        0% {
+            filter: opacity(0);
+        }
+        25% {
+            filter: opacity(0.3);
+        }
+        50% {
+            filter: opacity(0.6);
+        }
+        75% {
+            filter: opacity(0.8);
+        }
+        100% {
+            filter: opacity(1);
+        }
+    }
+    
+    .title-bio {
+        animation-name: click1;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-delay: 15s;
+    }
+    
+    .titles-2-3 {
+        animation-name: click1;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-delay: 18s;
+    }
+    
+    @keyframes click1 {
+        0% {
+            filter: opacity(0);
+        }
+        25% {
+            filter: opacity(0.3);
+        }
+        50% {
+            filter: opacity(0.6);
+        }
+        75% {
+            filter: opacity(0.8);
+        }
+        100% {
+            visibility: initial;
+        }
+    }
+    /* DISEÑO RESPONSIVE */
+    
+    @media screen and (min-width:365px) and (max-width: 749px) {
+        h2 {
+            font-size: 1em;
+            letter-spacing: 0.3em;
+        }
+        .titles-2-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        a {
+            font-size: 1.2em;
+        }
+        button {
+            width: 16em;
+            margin: 7px;
+        }
+        /* margin para que no se queden tan pegadas */
+        .imageGroot {
+            align-items: center;
+            justify-content: space-around;
+        }
+        /* para que se muestren al nivel de groot */
+        .hello {
+            font-size: 1.5em;
+            height: auto;
+            transform: none;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+        .whereYouGo {
+            font-size: 1em;
+            letter-spacing: normal;
+            height: auto;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            width: auto;
+            text-align: center;
+            transform: none;
+        }
+        /* aqui lr porque busco invertir los dos bloques que tengo en ese div */
+    }
+    
+    @media screen and (min-width:750px) and (max-width: 1024px) {}
+    
+    @media screen and (min-width:1024px) {}
